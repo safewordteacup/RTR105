@@ -7,9 +7,9 @@ Repository for RTU RECV01 RTR105
 ## Piemēri ar sarakstiem  
   
 _Satura rādītājs:_
-  *Sadaļa 1
-  *Sadaļa 2
-  *Sadaļa 3
+  * Sadaļa 1
+  * Sadaļa 2
+  * Sadaļa 3
 
 piemērs ar  sarakstu:
 - 1. elements
