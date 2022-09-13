@@ -28,3 +28,4 @@ piemērs ar  sarakstu:
 Footnotes  
 [^1]Grāmata, kurai nevarēju atrast linku
 Buuttoon
+kookokokokokok
