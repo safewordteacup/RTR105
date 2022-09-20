@@ -1,5 +1,6 @@
 #!/bin/bash
 git add . #commmand for map monitoring
 git config --global user.name safewordteacup
+git config --global user.email tomslaganovskis@gmail.com
 git commit -m "Class_04"
 git push origin main
