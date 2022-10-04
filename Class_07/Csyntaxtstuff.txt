@@ -1,0 +1,8 @@
+\n - pārceļ kursoru jaunā rindā
+\t - pārceļ kursoru uz tuvāko tabulācijas pozīciju
+\v - vertikālais stabs
+\b - pārceļ kursoru vienu pozīciju atpakaļ
+\a - bip!
+\r - pārceļ kursoru uz rindas sākumu
+
+printf("")
