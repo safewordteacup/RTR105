@@ -1,6 +1,6 @@
 #include<stdio.h>
 //declare the function that's going to use the bitwise operator
-//essentially this function compares an integer and a 10^n multiple using
+//essentially this function compares an integer and a 1 multiple using
 //The Boolean logic operator "AND", and prints a "1" whenever the output is > 0.
 // i defines the bitwise offset of the 1. So since it's intialized as
 //7, 1 is offset 7 times to the left, which gives us 1000 0000.
