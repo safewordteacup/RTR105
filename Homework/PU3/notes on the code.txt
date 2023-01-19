@@ -1,0 +1,22 @@
+1)
+    The alphabetical and inverse_alphabetical functions are 
+    simple if function trees that compare the different inputed
+    chars. The program does accept any type of char(even " " and "\n"),
+    because I couldn't make up my mind how t onarrow down the selection,
+    without writing a exclusion if function that would check for every
+    letter in the alphabet. yikers
+2)
+        int clear;
+        while(clear = getc(stdin)){
+        if(clear == '\n') break;
+        }
+    This code simply creates an infinite loop that assigns the excess
+    stdin input to the `clear` variable as to clear the stdin buffer
+    and not have the next `scanf` line pick up input from the previous
+    ones. It end when a line break is detected(The user would have 
+    "entered" the variable).
+    The getc() function gets the next character from a stream, then
+    advances the postion indicator of the stream.
+3)
+    The last piece of code simply let's the user select which of the
+    two function to run.
