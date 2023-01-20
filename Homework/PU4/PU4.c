@@ -62,11 +62,11 @@ int main(){
         else if(resultint=tempint)
             printf("Result: %d! = %d\n",i,resultint);
         else
-            printf("Not possible to calculate !%d with data type char.\n",i);
+            printf("Not possible to calculate !%d with data type int.\n",i);
     }
 
-    if( select == 'l'){
-        printf("You've selected the char data type.\n");
+    else if( select == 'l'){
+        printf("You've selected the long long int data type.\n");
         printf("Enter a whole decimal number to calculate it's factorial:\n");
         scanf("%lld",&l);
 
@@ -87,6 +87,9 @@ int main(){
         else if(resultlong=templong)
             printf("Result: %lld! = %lld\n",l,resultlong);
         else
-            printf("Not possible to calculate !%lld with data type char.\n",l);
+            printf("Not possible to calculate !%lld with data type long long int.\n",l);
     }
+
+    else
+        printf("That was not an option!\n");
 }
