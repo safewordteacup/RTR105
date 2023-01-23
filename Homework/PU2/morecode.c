@@ -16,7 +16,7 @@ for(;;){
     int b;
 
     //intialize an array of char's, the user will enter(max 3, because the char data type is in the limits of 0 to 255)
-    char A[3];
+    char A[4];
 
     //input
     printf("Enter a natural number in the limits of 0 to 255:\n");
