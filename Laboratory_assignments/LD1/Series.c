@@ -2,8 +2,8 @@
 #include <math.h>
 #include "userlib.h"
 
-long long int n, x, power, factorial;
-double actual_value, result;
+long long int n, factorial;
+double power, x, actual_value, result;
 
 int main() {
     printf("\nProvided function to use: (1+x)*e^x\n");
@@ -18,10 +18,10 @@ int main() {
     printf("           -------                                                      \n");
     printf("             i=0                                                      \n\n");
 
-    printf("Please enter how many iterations/polynomials the Taylor expansion should have:\n");
+    printf("Please enter how many iterations/polynomials the Taylor expansion should have:");
     scanf("%lld",&n);
-    printf("Please enter an argument \"x\" for the function/aproximation:\n");
-    scanf("%lld",&x);
+    printf("\nPlease enter an argument \"x\" for the function/aproximation:");
+    scanf("%lf",&x);
     actual_value = exp(x)*(1+x);
 
     for(long long int i = 0; i <= (n-1); i++){
@@ -29,9 +29,9 @@ int main() {
         power = pow(x,i);
         factorial = fact(i);
 
-        printf("\nResult of the Taylor series of the function\n(1+%lld)*e^%lld with %lld term(s):\n%.15lf\n",x,x,(i+1),result);
+        printf("\nResult of the Taylor series of the function (1+%.3lf)*e^%.3lf with %lld term(s):\n%.10lf\n",x,x,(i+1),result);
     }
 
-    printf("\nActual value of the expression:\n(1+%lld)*e^%lld = %.15lf\n",x,x,actual_value);
+    printf("\nActual value of the expression:\n(1+%.3lf)*e^%.3lf = %.10lf\n",x,x,actual_value);
     return 0;
 }
