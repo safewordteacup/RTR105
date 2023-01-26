@@ -7,7 +7,7 @@ double fun(double enter){
     return value;
 }
 
-double prec, temp, mid, a, b, n = 0, function, bounds;
+double prec, temp, mid, a, b, n = 0, bounds;
 long long int c;
 int clear;
 
@@ -53,8 +53,12 @@ int main(){
         }
         //printf("Right bound:%.15lf\n",b);
         //printf("Absolute (val_at_avrg - n):%.15lf\n",fabs(temp-n));
+        if(((fun(a)-n)*(fun(b)-n))>0){
+            printf("Error: Either no roots, or multiple roots in chosen domain.\n");
+            break;
+        }
         if(temp == INFINITY){
-            printf("Error: Honestly I don't know why this happened.");
+            printf("Error: Honestly I don't know why this happened, most likely overflow.\n");
             break;
         }
     }
