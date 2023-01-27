@@ -33,15 +33,15 @@ int main(){
 
     //table formating stuff
 
-    fprintf(myfile, "\t                x\t              (1+x)*exp(x)\t       ((1+x)*exp(x))\'ana.form.\t        ((1+x)*exp(x))\'dif.form.\t         ((1+x)*exp(x))\'\'ana.form.\t        ((1+x)*exp(x))\'\'dif.form.\n\n");
+    fprintf(myfile, "\t               x\t              (1+x)*exp(x)\t         ((1+x)*exp(x))\'\t     ((1+x)*exp(x))\'\t    ((1+x)*exp(x))\'\'\t    ((1+x)*exp(x))\'\'\n");
+    fprintf(myfile, "\t              arg\t                 funkc\t                ana.form.\t            dif.form.\t            ana.form.\t            dif.form.\n\n");
     
     x = a;
     while(x<b){
         first_deriv = (((myexp(x+deltaX))-(myexp(x-deltaX)))/(2*deltaX));
-        second_deriv = (((((((myexp(x)+deltaX)-(myexp(x)-deltaX))/(2*deltaX)))+(deltaX))-(((((myexp(x)+deltaX)-(myexp(x)-deltaX))/(2*deltaX)))-(-deltaX)))/(2*deltaX));
+        second_deriv = (((myexp1(x+deltaX))-(myexp1(x-deltaX)))/(2*deltaX));
         ex = myexp(x); ex1 = myexp1(x); ex2 = myexp2(x);
-
-        fprintf(myfile, "\t %20.3lf\t %20.3lf\t %20.3lf\t %20.3lf\t %20.3lf\t %20.3lf\n", x, myexp(x), ex1, first_deriv, ex2, second_deriv);
+        fprintf(myfile, "\t %20.8lf\t %20.8lf\t %20.8lf\t %20.8lf\t %20.8lf\t %20.8lf\n", x, ex, ex1, first_deriv, ex2, second_deriv);
         x += deltaX;
 
     } 
